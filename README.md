@@ -1,3 +1,5 @@
+🔗 Live Demo: https://rachelsalomon.github.io/food-by-mood/
+
 # Food By Mood
 
 A simple web app that helps you decide what to eat based on your mood.
