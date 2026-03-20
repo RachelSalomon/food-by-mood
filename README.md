@@ -2,6 +2,8 @@
 
 # Food By Mood
 
+![App Screenshot](screenshot.png)
+
 A simple web app that helps you decide what to eat based on your mood.
 
 Choose how you feel (hungry, happy, stressed, tired, etc.) and get a meal suggestion — or use the "Surprise Me" button for a random pick.
