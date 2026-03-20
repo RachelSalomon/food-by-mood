@@ -2,7 +2,7 @@
 
 # Food By Mood
 
-![App Screenshot](screenshot.png)
+<img src="screenshot.png" width="800"/>
 
 A simple web app that helps you decide what to eat based on your mood.
 
