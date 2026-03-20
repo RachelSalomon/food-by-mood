@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #aecfe5;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.all_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+/* CARD */
+
+.card {
+  width: 170px;
+  height: 150px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+/* INNER */
+
+.card_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* FRONT */
+
+.card_front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* BACK */
+
+.card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: #f4f8ff;
+  display: none;
+}
+
+.card_back h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.card_back ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.card_back li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* FLIP LOGIC */
+
+.card.flipped .card_front {
+  display: none;
+}
+
+.card.flipped .card_back {
+  display: block;
+}
+
+/* SUPRISE BUTTON */
+
+.surprise {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+#btn:active {
+  transform: scale(0.97);
+}
+
+#res {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .card {
+    width: 140px;
+    height: 150px;
+  }
+}
